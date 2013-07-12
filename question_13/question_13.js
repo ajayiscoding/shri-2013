@@ -2,8 +2,7 @@
 Пример такого числа:
 4! + 0! + 5! + 8! + 5! = 40585 */
 
-/* TODO: Придумать название получше =) */
-function searchSpecialNumbers(maxNumber){
+function getListOfNumbersEqualSumOfFactorialsItsDigits(maxNumber){
   var summ = 0,
       digits,
       digit;
@@ -18,14 +17,16 @@ function searchSpecialNumbers(maxNumber){
     return digits;
   }
 
-  /* Рекурсивно получаем массив */
   var getFactorialOf = function(n){
-    if(n === 0 || n === 1){
-      return 1;
+    var factorial = 1;
+
+    for(var i = 2; i <= n; i += 1){
+      factorial *= i;
     }
 
-    return n * getFactorialOf(n - 1);
+    return factorial;
   }
+
 
   for(var n = 0; n < maxNumber; n += 1){
     digits = getArrayOfDigits(n);
@@ -45,7 +46,4 @@ function searchSpecialNumbers(maxNumber){
   }
 }
 
-var start = new Date();
-searchSpecialNumbers(100000);
-var end = new Date();
-console.log(end.getTime() - start.getTime());
+getListOfNumbersEqualSumOfFactorialsItsDigits(1000000);
