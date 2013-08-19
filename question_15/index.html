@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Вопрос № 15. Анкета участника.</title>
+  <link rel="stylesheet" href="questionnaire.css">
+  <script src="jquery.js"></script>
+</head>
+<body>
+  <form action="/send/form" method="post">
+    <div class="questionnaire" id="questionnaire">
+      <h3>Анкета второй Школы разработки интерфейсов в Москве</h3>
+      <div class="question">
+        <div class="question-title">
+          <span class="pseudo-link" data-container="question-body-1">Вопрос 1</span>
+        </div>
+        <div class="question-body" id="question-body-1">
+          <div class="question-description">Год рождения.</div>
+          <div class="question-answer">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <div class="question-title">
+          <span class="pseudo-link" data-container="question-body-2">Вопрос 2</span>
+        </div>
+        <div class="question-body" id="question-body-2">
+          <div class="question-description">Город в котором живете.</div>
+          <div class="question-answer">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <div class="question-title">
+          <span class="pseudo-link" data-container="question-body-3">Вопрос 3</span>
+        </div>
+        <div class="question-body" id="question-body-3">
+          <div class="question-description">Вуз, факультет, специальность, кафедра.</div>
+          <div class="question-answer">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <div class="question-title">
+          <span class="pseudo-link" data-container="question-body-4">Вопрос 4</span>
+        </div>
+        <div class="question-body" id="question-body-4">
+          <div class="question-description">Год окончания вуза.</div>
+          <div class="question-answer">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <div class="question-title">
+          <span class="pseudo-link" data-container="question-body-5">Вопрос 5</span>
+        </div>
+        <div class="question-body" id="question-body-5">
+          <div class="question-description">Уровень владения английским языком:</div>
+          <div class="question-answer">
+            <ul class="no-marker">
+              <li>
+                <input type="checkbox" id="q5_a1" />
+                <label for="q5_a1">начальный;</label>
+              </li>
+              <li>
+                <input type="checkbox" id="q5_a2" />
+                <label for="q5_a2">средний;</label>
+              </li>
+              <li>
+                <input type="checkbox" id="q5_a3" />
+                <label for="q5_a3">свободное владение.</label>
+              </li>
+            </ul>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <div class="question-title">
+          <span class="pseudo-link" data-container="question-body-6">Вопрос 6</span>
+        </div>
+        <div class="question-body" id="question-body-6">
+          <div class="question-description">Чего вы ожидаете от участия в Школе?</div>
+          <div class="question-answer">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <div class="question-title">
+          <span class="pseudo-link" data-container="question-body-7">Вопрос 7</span>
+        </div>
+        <div class="question-body" id="question-body-7">
+          <div class="question-description">Откуда вы о нас узнали?</div>
+          <div class="question-answer">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <div class="question-title">
+          <span class="pseudo-link" data-container="question-body-8">Вопрос 8</span>
+        </div>
+        <div class="question-body" id="question-body-8">
+          <div class="question-description">Сколько времени вы были бы готовы уделять стажировке или работе в Яндексе?</div>
+          <div class="question-answer">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <div class="question-title">
+          <span class="pseudo-link" data-container="question-body-9">Вопрос 9</span>
+        </div>
+        <div class="question-body" id="question-body-9">
+          <div class="question-description">Расскажите о вашем опыте разработки. Нам будет интересно всё — как серьезный интерфейс, так и просто домашняя страничка.</div>
+          <div class="question-answer">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <div class="question-title">
+          <span class="pseudo-link" data-container="question-body-10">Вопрос 10</span>
+        </div>
+        <div class="question-body" id="question-body-10">
+          <div class="question-description">Если вы где-нибудь работали, расскажите, какие у вас были должностные обязанности и был ли опыт работы в команде.</div>
+          <div class="question-answer">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <div class="question-title">
+          <span class="pseudo-link" data-container="question-body-11">Вопрос 11</span>
+        </div>
+        <div class="question-body" id="question-body-11">
+          <div class="question-description">Перечислите, какими программными продуктами вы&nbsp;пользуетесь в&nbsp;своей работе&nbsp;&mdash; от&nbsp;редактора до&nbsp;специализированных утилит (Intellij Idea, Node.js, Uglify.js, GNU Make). Для каждого инструмента укажите, какие задачи вы&nbsp;с&nbsp;помощью него решаете и&nbsp;почему выбрали именно его.</div>
+          <div class="question-answer">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <div class="question-title">
+          <span class="pseudo-link" data-container="question-body-12">Вопрос 12</span>
+        </div>
+        <div class="question-body" id="question-body-12">
+          <div class="question-description">Пользуетесь&nbsp;ли вы&nbsp;командной строкой? Какими командами вы&nbsp;пользуетесь и&nbsp;какие задачи вы&nbsp;решаете с&nbsp;их&nbsp;помощью? С&nbsp;какими программами вы&nbsp;преимущественно или полностью взаимодействуете через интерфейс командной строки?</div>
+          <div class="question-answer">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <div class="question-title">
+          <span class="pseudo-link" data-container="question-body-13">Вопрос 13</span>
+        </div>
+        <div class="question-body" id="question-body-13">
+          <div class="question-description">
+            <p>Напишите на&nbsp;JavaScript функцию, которая выводит список всех чисел, которые равны сумме факториалов своих цифр. Пример такого числа:</p><p><b>4! + 0! + 5! + 8! + 5! = 40585</b></p><p>В&nbsp;качестве ответа на&nbsp;вопрос пришлите ссылку на&nbsp;<a href="http://jsfiddle.net/">http://jsfiddle.net/</a> с&nbsp;вашим кодом или на&nbsp;ваш репозиторий на&nbsp;<a href="https://github.com/">https://github.com/</a>.</p>
+          </div>
+          <div class="question-answer">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <div class="question-title">
+          <span class="pseudo-link" data-container="question-body-14">Вопрос 14</span>
+        </div>
+        <div class="question-body" id="question-body-14">
+          <div class="question-description">
+            <p>Вы&nbsp;&mdash; пилот грузового межгалактического корабля. Ваша работа&nbsp;&mdash; перевозка грузов с&nbsp;одной планету на&nbsp;другую. Грузоподъемность вашего корабля ограничена, поэтому за&nbsp;один рейс вы&nbsp;можете перевезти не&nbsp;более&nbsp;N кг&nbsp;полезного груза. Ваш корабль умеет сообщать свое состояние (местоположение и&nbsp;степень загруженности), а&nbsp;также летать в&nbsp;любую точку пространства. Каждая планета может содержать на&nbsp;себе груз, который можно взять. Также на&nbsp;каждой планете груз можно оставить .
+            </p>
+            <p>Задание:</p>
+            <p>Даны незавершенные интерфейсы корабля и&nbsp;планеты. Напишите недостающий код.</p>
+            <p>Полное условие задачи доступно на <a href="https://github.com/yandex-shri/introtask-space">https://github.com/yandex-shri/introtask-space</a></p>
+
+  В&nbsp;качестве ответа на&nbsp;вопрос пришлите ссылку на&nbsp;http://jsfiddle.net/ с&nbsp;вашим кодом или на&nbsp;ваш репозиторий на&nbsp;https://github.com/.
+            </p>
+          </div>
+          <div class="question-answer">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <div class="question-title">
+          <span class="pseudo-link" data-container="question-body-15">Вопрос 15</span>
+        </div>
+        <div class="question-body" id="question-body-15">
+          <div class="question-description">
+            <p>Сверстайте форму-анкету с&nbsp;нашими заданиями для кандидатов. Страница должна работать в&nbsp;следующих браузерах: MSIE (8, 9, 10), Google Chrome (26, 27), Firefox (20, 21), Opera (12.15, 12.14), Яндекс.Браузер 1.5. По&nbsp;возможности используйте приёмы безопасной деградации CSS. Страница должна содержать интерактив, реализованный с&nbsp;помощью&nbsp;JS и&nbsp;jQuery. Это может быть:</p>
+            <ul>
+              <li>проверка полноты и&nbsp;правильности заполнения полей (где это возможно);</li>
+              <li>возможность свернуть и&nbsp;развернуть разделы (аккордеон);</li>
+              <li>индикатор заполнения анкеты;</li>
+              <li>что-нибудь ещё.</li>
+            </ul>
+            <p>Подумайте над тем, как эти данные будут отправляться на&nbsp;сервер.</p>
+            <p>Будет плюсом, если вы&nbsp;сверстаете страницу, используя БЭМ.</p>
+            <p>Дополнительные задания</p>
+            <ol>
+              <li>Выполните задание про форму-анкету, используя один из&nbsp;классических шаблонизаторов: Handlebars, mustache, Dust, Jade и&nbsp;т.п.</li>
+              <li>Выполните задание про форму-анкету, используя один из&nbsp;экзотических шаблонизаторов: XSLT, YATE, BEMHTML и&nbsp;т.п.</li>
+            </ol>
+            <p>Разработку необходимо вести на&nbsp;<a href="https://github.com/">https://github.com/</a>. В&nbsp;качестве ответа на&nbsp;вопрос пришлите ссылку на&nbsp;проект.</p>
+          </div>
+          <div class="question-answer">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+      </div>
+      <input type="submit" value="Отправить" />
+      <input type="reset" value="Очистить" />
+    </div>
+  </form>
+  <script src="questionnaire.js" type="text/javascript"></script>
+</body>
+</html>
